@@ -1,0 +1,17 @@
+{
+  "name": "lead",
+  "version": "0.0.1",
+  "description": "deploying node js to heroku platform",
+  "main": "app.js",
+  "author": {
+    "name": "Nishanth Kabra",
+    "email": "nishantkabra14@gmail.com"
+  },
+  "engines": {
+    "node": "6.9.x",
+    "npm": "3.10.x"
+  },
+  "dependencies": {
+    "express": "4.15.x"
+  }
+}

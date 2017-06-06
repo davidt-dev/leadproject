@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html ng-app="quoteApp" lang="en">
+
+<head>
+    <% include ../partials/head %>
+</head>
+
+<body class="container">
+
+        <% include ../partials/header %>
+
+
+    <div class="row vertical-center-row">
+        <h1 class="text-center">What to eat you ask?</h1>
+        <p class="text-center" >Don't worry we got your back, click the button below to see our suggestions on what to eat.</p>
+    </div>
+
+    <div class="form-group" ng-controller="MainController">
+        <label class="col-md-12 control-label" for="singlebutton"></label>
+        <div class="col-md-12">
+            <button id="singlebutton" name="singlebutton" class="btn btn-primary center-block" ng-click="randomQuote()">
+                Recommend me!
+            </button>
+        </div>
+        <div id="products" class="row list-group">
+
+       <div class="item  col-xs-6 col-lg-6">
+           <div class="thumbnail">
+               <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+               <div class="caption">
+                   <h4 class="group inner list-group-item-heading">
+                    {{content}}
+                   </h4>
+                   <p class="group inner list-group-item-text">
+                    {{author}}
+                   </p>
+                   <div class="row">
+                       <div class="col-xs-12 col-md-6">
+                           <p class="lead">
+                               $21.000</p>
+                       </div>
+                       <div class="col-xs-12 col-md-6">
+                           <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+       <div id="products" class="row list-group">
+       <div class="item  col-xs-6 col-lg-6">
+           <div class="thumbnail">
+               <img class="group list-group-image" src="http://placehold.it/400x250/000/fff" alt="" />
+               <div class="caption">
+                   <h4 class="group inner list-group-item-heading">
+                      {{contenttwo}}
+                    </h4>
+                   <p class="group inner list-group-item-text">
+                       {{authortwo}}
+                   </p>
+                   <div class="row">
+                       <div class="col-xs-12 col-md-6">
+                           <p class="lead">
+                               $21.000</p>
+                       </div>
+                       <div class="col-xs-12 col-md-6">
+                           <a class="btn btn-success" href="http://www.jquery2dotnet.com">Add to cart</a>
+                       </div>
+                   </div>
+               </div>
+           </div>
+       </div>
+
+        </div>
+      <!-- angular -->
+     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+     <script src="/stylesheets/app.js"></script>
+
+
+    <!-- <footer class="footer">
+        <% include ../partials/footer %>
+    </footer> -->
+</body>
+
+
+</html>
